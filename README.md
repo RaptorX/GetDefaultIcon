@@ -1,4 +1,4 @@
-# Function: GetDefaultIcon(fExt [, getHandle])
+# GetDefaultIcon(`fExt` [, getHandle])
 [AHK Forum Post](https://www.autohotkey.com/boards/viewtopic.php?t=107092)
 
 Based on a specific use case of the AssocQueryString function.
@@ -10,16 +10,16 @@ More info at [MSDN](https://docs.microsoft.com/en-us/windows/win32/api/shlwapi/n
 
 ---
 
-## Params:
-* `fExt`      - File extension to work on with optional `.` in front e.g.: ahk or .ahk
-* `getHandle` - instruct the function to either return the handle to a resource or
+### Params:
+- `fExt`      - File extension to work on with optional `.` in front e.g.: ahk or .ahk
+- `getHandle` - instruct the function to either return the handle to a resource or
             the string to the default executable file
 
-## Returns:
+### Returns:
 - A Handle to an icon resource (Default)
 - A string to the default executable and icon number for the extension
 
-## Examples:
+### Examples:
 The period is optional when passing the extension
 ```
 	MsgBox GetDefaultIcon("ahk")
